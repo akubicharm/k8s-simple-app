@@ -6,7 +6,7 @@ env:
   CLUSTER_NAME: akubicharmaks
   CLUSTER_RESOURCE_GROUP: aks
   NAMESPACE: simplenodeapp
-  SECRET: AZURE_CREDENTIALS
+  SECRET: azurecredentials
   APP_NAME: nodehello
   
 jobs:
