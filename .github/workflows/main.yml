@@ -8,7 +8,7 @@ env:
   CLUSTER_NAME: akubicharmaks
   CLUSTER_RESOURCE_GROUP: aks
   NAMESPACE: simpleapp
-  APP_NAME: {nodehello} 
+  APP_NAME: nodehello
 
 # Controls when the workflow will run
 on:
