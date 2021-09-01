@@ -20,7 +20,7 @@ http.createServer(function (req, res) {
     console.info("info: " + PREF + msg)
     console.trace("trace: " + PREF + msg)
 
-    zzz();
+    //zzz();
 
 
     res.writeHead(200, {'Content-Type': 'text/plain'})
@@ -35,5 +35,5 @@ async function zzz() {
    const res = await timer.setTimeout(20000, 'result');
    console.log(res);
    console.log("shutdown");
-   //process.exit(1);
+   process.exit(1);
 }
