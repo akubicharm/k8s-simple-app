@@ -35,5 +35,5 @@ async function zzz() {
    const res = await timer.setTimeout(20000, 'result');
    console.log(res);
    console.log("shutdown");
-   process.exit(1);
+   //process.exit(1);
 }
