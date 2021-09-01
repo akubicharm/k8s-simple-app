@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: hellonode
-        image: akubicharm.azurecr.io/hellopython:latest
+        image: akubicharm.azurecr.io/nodehello:latest
         ports:
         - containerPort: 8080
 ---
