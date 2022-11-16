@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: akubicharmkssimpleapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: akubicharmkssimpleapp
+  template:
+    metadata:
+      labels:
+        app: akubicharmkssimpleapp 
+    spec:
+      containers:
+        - name: akubicharmkssimpleapp 
+          image: akubicharm.azurecr.io/akubicharmkssimpleapp
+          ports:
+          - containerPort: 8080
