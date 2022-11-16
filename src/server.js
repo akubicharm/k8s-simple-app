@@ -16,16 +16,18 @@ http.createServer(function (req, res) {
     }
       
     console.log("log: " + PREF + msg)
-    console.error("error: " + PREF + msg)
-    console.info("info: " + PREF + msg)
-    console.trace("trace: " + PREF + msg)
+    // console.error("error: " + PREF + msg)
+    // console.info("info: " + PREF + msg)
+    // console.trace("trace: " + PREF + msg)
 
     //zzz();
 
 
     res.writeHead(200, {'Content-Type': 'text/plain'})
     const host = os.hostname()
-    res.end(`Hello World ${host} \n`)
+    const req_client = req.socket.remoteAddress
+    const res_client = req.ip
+    res.end(`Hello World host = ${host} , req_client = ${req_client} , res_client = ${res_client}\n`)
 }).listen(8080)
 
 
